@@ -1,0 +1,178 @@
+    1  ls
+    2  cd mycode/
+    3  git ls-files
+    4  ls
+    5  touch index.html
+    6  ls
+    7  git ls-files
+    8  git add index.html 
+    9  git ls-files
+   10  ls
+   11  git status
+   12  git commit -m "saya menambahkan index.html"
+   13  git config --global user-name rakyan
+   14  git config --global user.name rakyan
+   15  git config --global user.email rkyn.aa@gmail.com
+   16  git commit -m "saya menambahkan index.html"
+   17  git status
+   18  git status
+   19  git push origin master
+   20  gedit index.html 
+   21  vi index.html 
+   22  git push origin master
+   23  git commit
+   24  git commit -a
+   25  git commit -m "modified index.html"
+   26  git push origin master
+   27  git commit -m "modified index.html"
+   28  git push origin masterls
+   29  ls
+   30  git ls-files
+   31  cd /git
+   32  git commit -a
+   33  rm .git/index.lock
+   34  git commit -m "modified index.html"
+   35  git push origin masterls
+   36  git push origin master
+   37  git status
+   38  git add index.html 
+   39  git commit -m "modified index.html"
+   40  git push origin master
+   41  git log
+   42  git pull origin master
+   43  git log
+   44  vi index.html 
+   45  touch test1.txt
+   46  touch test2.txt
+   47  touch test3.txt
+   48  touch test4.txt
+   49  touch test5.txt
+   50  git status
+   51  git add .
+   52  git status
+   53  git commit -m "saya menambahkan 5 txt file"
+   54  git push origin master
+   55  mkdir level1
+   56  touch level1/testlevel1.txt
+   57  git status
+   58  git add .
+   59  git status
+   60  git push origin master
+   61  git commit -m "test level"
+   62  git push origin master
+   63  git status
+   64  git log
+   65  vi index.html 
+   66  git status
+   67  git add .
+   68  git status
+   69  git commit -m "tetsing #2"
+   70  git push origin master
+   71  git log
+   72  git checkout cbb9672 index.html
+   73  git log
+   74  cat index.html 
+   75  git add .
+   76  git commit -m "testing undo (sort of)"
+   77  git push origin master
+   78  history
+   79  git rm test5.txt 
+   80  git commit -m "delete test5.txt'
+   81  git commit -m "delete test5.txt"
+   82  git push origin master
+   83  git config --global alias.hist "log --oneline --graph --all --decorate"
+   84  git hist
+   85  vi ~/gitconfig
+   86  vi ~/.gitconfig
+   87  touch rahasia.txt
+   88  vi .gitignore
+   89  git status
+   90  git add .
+   91  git commit -m "tambah gitignore"
+   92  git push master origin
+   93  git push origin master
+   94  ls
+   95  history
+   96  git branch -a
+   97  git branch ver1.0
+   98  git branch -a
+   99  git checkout ver1.0
+  100  git branch -a
+  101  ls
+  102  cat index.html 
+  103  echo "<h1>testing</h1>" >> index.html 
+  104  git add .
+  105  git commit -m "testing"
+  106  git checkout master
+  107  cat index.html 
+  108  git checkout ver1.0
+  109  cat index.html 
+  110  git checkout master
+  111  git push origin ver1.0
+  112  git branch -a
+  113  git branch -m ver1.0 beta
+  114  git branch -a
+  115  git push origin beta
+  116  git branch -a
+  117  git branch -d beta
+  118  git branch -D beta
+  119  git branch -a
+  120  git push origin --delete beta
+  121  git branch -a
+  122  git push origin --delete ver1.0
+  123  git branch beta
+  124  vi index.html 
+  125  git add .
+  126  git commit -m "test from master"
+  127  git hist
+  128  git checkout beta
+  129  vi index.html 
+  130  git add .
+  131  git commit "test from beta"
+  132  git commit -m "test from beta"
+  133  git hist
+  134  git checkout master
+  135  git merge beta
+  136  vi index.html 
+  137  git status
+  138  git merge beta
+  139  git add .
+  140  git commit -m "merge master and beta"
+  141  git hist
+  142  yum install -y yum-utils   device-mapper-persistent-data   lvm2
+  143  yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+  144  ls
+  145  yum install docker-ce docker-ce-cli containerd.io
+  146  systemctl docker start
+  147  systemctl start docker
+  148  systemctl enable docker
+  149  docker run hello-world
+  150  docker run -itd 8080:80 httpd
+  151  docker run -itd -p 8080:80 httpd
+  152  docker ps
+  153  docker run -itd -p 8081:80 httpd
+  154  docker run -itd -p 8082:80 httpd
+  155  ifconfig
+  156  docker exec -lt c17 /bin /dash
+  157  docker exec -it c17 /bin /dash
+  158  docker images
+  159  docker ps
+  160  docker exec -it 0c5 /bin/dash
+  161  docker exec -it 0c5 /bin/bash
+  162  docker run -itd -p 8080:80 httpd
+  163  docker exec -it 0c5 /bin/dash
+  164  docker exec -it 0c5 /bin/bash
+  165  docker exec -it 0c5 /bin/dash
+  166  docker exec -it 0c5 /bin/bash
+  167  docker images
+  168  docker ps
+  169  docker exec -it b25 /bin/bash
+  170  history
+  171  docker images
+  172  docker ps
+  173  ls
+  174  cd mycode/
+  175  history
+  176  cd ..
+  177  cd mycode/
+  178  history >> history04Mei.txt
