@@ -1,0 +1,50 @@
+  322  docker build rkyndevops/nginx
+  323  docker build -t rkyndevops/nginx .
+  324  history | tail -100
+  325  docker images
+  326  docker run -itd --name nginxubuntu buntu:16.04
+  327  docker run -itd --name nginxubuntu ubuntu:16.04
+  328  docker ps
+  329  docker commit fcc
+  330  coker images
+  331  docker images
+  332  docker tag 1631f5f5857c nginxubuntu
+  333  docker tag 1631f5f5857c rkyndevops/nginxubuntu
+  334  docker images
+  335  docker run -itd --name nginxbaru -p 90:80 rkyndevops/nginxubuntu /usr/sbin/nginx -g 'daemon off:'
+  336  docker ps
+  337  docker ps -q
+  338  docker ps -a
+  339  vi Dockerfile
+  340  docker rm 9b6
+  341  doker iamges
+  342  docker images
+  343  docker rmi nginxubuntu\
+  344  docker rmi nginxubuntu
+  345* docker image
+  346  docker rmi rkyndevops/nginxubuntu
+  347  docker rmi rkyndevops/nginx
+  348  docker build -t rkyndevops/nginx2 .
+  349  history | tail -100
+  350* docker run -itd --name nginx_ubuntu ubuntu:16
+  351* 
+  352  history | tail -75
+  353  docker ps
+  354  docker commit fb6
+  355  docker images
+  356  docker tag a98ceec7abbe rkyndevops/nginx_ubuntu
+  357  docker run -itd --name nginxbaru2 -p 90:80 rkyndevops/nginx_ubuntu /usr/sbin/nginx -g 'daemon off:'
+  358  docker ps
+  359  docker ps -a
+  360  docker run -itd --name nginxbaru2 -p 90:80 rkyndevops/nginx_ubuntu /usr/sbin/nginx -g 'daemon off;'
+  361  docker rm nginx2
+  362  docker rm nginxbaru2
+  363  docker run -itd --name nginxbaru2 -p 90:80 rkyndevops/nginx_ubuntu /usr/sbin/nginx -g 'daemon off;'
+  364  docker ps
+  365  vi Dockerfile 
+  366  docker ps
+  367  docker images
+  368  docker push rkyndevops/nginx2
+  369  docker push rkyndevops/nginx_ubuntu
+  370  history | tail -50
+  371  history | tail -50 >> cara_nginx.txt

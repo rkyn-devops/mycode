@@ -1,0 +1,537 @@
+    1  ls
+    2  cd mycode/
+    3  git ls-files
+    4  ls
+    5  touch index.html
+    6  ls
+    7  git ls-files
+    8  git add index.html 
+    9  git ls-files
+   10  ls
+   11  git status
+   12  git commit -m "saya menambahkan index.html"
+   13  git config --global user-name rakyan
+   14  git config --global user.name rakyan
+   15  git config --global user.email rkyn.aa@gmail.com
+   16  git commit -m "saya menambahkan index.html"
+   17  git status
+   18  git status
+   19  git push origin master
+   20  gedit index.html 
+   21  vi index.html 
+   22  git push origin master
+   23  git commit
+   24  git commit -a
+   25  git commit -m "modified index.html"
+   26  git push origin master
+   27  git commit -m "modified index.html"
+   28  git push origin masterls
+   29  ls
+   30  git ls-files
+   31  cd /git
+   32  git commit -a
+   33  rm .git/index.lock
+   34  git commit -m "modified index.html"
+   35  git push origin masterls
+   36  git push origin master
+   37  git status
+   38  git add index.html 
+   39  git commit -m "modified index.html"
+   40  git push origin master
+   41  git log
+   42  git pull origin master
+   43  git log
+   44  vi index.html 
+   45  touch test1.txt
+   46  touch test2.txt
+   47  touch test3.txt
+   48  touch test4.txt
+   49  touch test5.txt
+   50  git status
+   51  git add .
+   52  git status
+   53  git commit -m "saya menambahkan 5 txt file"
+   54  git push origin master
+   55  mkdir level1
+   56  touch level1/testlevel1.txt
+   57  git status
+   58  git add .
+   59  git status
+   60  git push origin master
+   61  git commit -m "test level"
+   62  git push origin master
+   63  git status
+   64  git log
+   65  vi index.html 
+   66  git status
+   67  git add .
+   68  git status
+   69  git commit -m "tetsing #2"
+   70  git push origin master
+   71  git log
+   72  git checkout cbb9672 index.html
+   73  git log
+   74  cat index.html 
+   75  git add .
+   76  git commit -m "testing undo (sort of)"
+   77  git push origin master
+   78  history
+   79  git rm test5.txt 
+   80  git commit -m "delete test5.txt'
+   81  git commit -m "delete test5.txt"
+   82  git push origin master
+   83  git config --global alias.hist "log --oneline --graph --all --decorate"
+   84  git hist
+   85  vi ~/gitconfig
+   86  vi ~/.gitconfig
+   87  touch rahasia.txt
+   88  vi .gitignore
+   89  git status
+   90  git add .
+   91  git commit -m "tambah gitignore"
+   92  git push master origin
+   93  git push origin master
+   94  ls
+   95  history
+   96  git branch -a
+   97  git branch ver1.0
+   98  git branch -a
+   99  git checkout ver1.0
+  100  git branch -a
+  101  ls
+  102  cat index.html 
+  103  echo "<h1>testing</h1>" >> index.html 
+  104  git add .
+  105  git commit -m "testing"
+  106  git checkout master
+  107  cat index.html 
+  108  git checkout ver1.0
+  109  cat index.html 
+  110  git checkout master
+  111  git push origin ver1.0
+  112  git branch -a
+  113  git branch -m ver1.0 beta
+  114  git branch -a
+  115  git push origin beta
+  116  git branch -a
+  117  git branch -d beta
+  118  git branch -D beta
+  119  git branch -a
+  120  git push origin --delete beta
+  121  git branch -a
+  122  git push origin --delete ver1.0
+  123  git branch beta
+  124  vi index.html 
+  125  git add .
+  126  git commit -m "test from master"
+  127  git hist
+  128  git checkout beta
+  129  vi index.html 
+  130  git add .
+  131  git commit "test from beta"
+  132  git commit -m "test from beta"
+  133  git hist
+  134  git checkout master
+  135  git merge beta
+  136  vi index.html 
+  137  git status
+  138  git merge beta
+  139  git add .
+  140  git commit -m "merge master and beta"
+  141  git hist
+  142  yum install -y yum-utils   device-mapper-persistent-data   lvm2
+  143  yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+  144  ls
+  145  yum install docker-ce docker-ce-cli containerd.io
+  146  systemctl docker start
+  147  systemctl start docker
+  148  systemctl enable docker
+  149  docker run hello-world
+  150  docker run -itd 8080:80 httpd
+  151  docker run -itd -p 8080:80 httpd
+  152  docker ps
+  153  docker run -itd -p 8081:80 httpd
+  154  docker run -itd -p 8082:80 httpd
+  155  ifconfig
+  156  docker exec -lt c17 /bin /dash
+  157  docker exec -it c17 /bin /dash
+  158  docker images
+  159  docker ps
+  160  docker exec -it 0c5 /bin/dash
+  161  docker exec -it 0c5 /bin/bash
+  162  docker run -itd -p 8080:80 httpd
+  163  docker exec -it 0c5 /bin/dash
+  164  docker exec -it 0c5 /bin/bash
+  165  docker exec -it 0c5 /bin/dash
+  166  docker exec -it 0c5 /bin/bash
+  167  docker images
+  168  docker ps
+  169  docker exec -it b25 /bin/bash
+  170  history
+  171  docker images
+  172  docker ps
+  173  history
+  174  docker image
+  175  docker images
+  176  docker ps
+  177  cd /
+  178  cd volume/
+  179  vi index.html 
+  180  docker login
+  181  docker run -itd -p 8100:80 -v /volume:/var/www/html rkyndevops/httpd2
+  182  dicker ps
+  183  docker ps
+  184  docker run -itd -p 8105:80 --volume-from distracted_johnson rkyndevops/httpd2 container2
+  185  docker run -itd -p 8105:80 --volumes-from distracted_johnson rkyndevops/httpd2 container2
+  186  docker ps
+  187  docker ps -a
+  188  docker rm 47f
+  189  docker rm 6a0
+  190  docker run -itd -p 8105:80 --name container2 --volumes-from distracted_johnson rkyndevops/httpd2
+  191  docker ps
+  192  vi index.html 
+  193  echo "<a html:"192.168.100.134:90"> Click here for nginx </a>" >>index.html 
+  194  vi index.html 
+  195  docker logout
+  196  ls
+  197  cd mycode/
+  198  history
+  199  cd ..
+  200  cd mycode/
+  201  history >> history04Mei.txt
+  202  git add .
+  203  git status
+  204  git commit -m "history 04 mei 2019"
+  205  git push origin master
+  206  docker ps
+  207  status docker
+  208  docker status
+  209  systemctl status docker
+  210  docker image list
+  211  docker images
+  212  docker pull nginx
+  213  docker images
+  214  docker run -itd nginx
+  215  docker ps
+  216  docker run -it nginx /usr/sbin/nginx
+  217  docker ps
+  218  docker ps -help
+  219  docker ps --help
+  220  docker ps -a
+  221  docker run -it nginx /bin/bash
+  222  docker ps -a
+  223  docker run --help
+  224  docker ps --help
+  225  docker ps -a
+  226  docker stop 854
+  227  docker ps -a
+  228  docker stop $(docker ps -aq)
+  229  docker ps -a
+  230  docker rm 854
+  231  docker ps -a
+  232  docker rm $(docker ps -a)
+  233  docker rm $(docker ps -aq)
+  234  docker ps -a
+  235  docker ps -q
+  236  docker ps -aq
+  237  docker ps
+  238  history
+  239  docker images
+  240  docker rmi nginx
+  241  docker images
+  242  yum install gedit
+  243  gedit history04Mei.txt 
+  244  yum install nano
+  245  mkdir docker
+  246  cd docker/
+  247  pwd
+  248  ls
+  249  nano Dockerfile
+  250  vi Dockerfile
+  251  docker build -t rkyndevops/httpd2 .
+  252  vi Dockerfile
+  253  cd ..
+  254  ls
+  255  cd docker/
+  256  vi Dockerfile 
+  257  docker build -t rkyndevops/httpd2 .
+  258  vi Dockerfile 
+  259  cd ..
+  260  cp docker/Dockerfile .
+  261  ls
+  262  vi Dockerfile 
+  263  docker build -t rkyndevops/httpd2 .
+  264  docker images
+  265  docker ps
+  266  ifconfig --help
+  267  ifconfig -a
+  268  docker images
+  269  docker ps
+  270  docker run -itd -p 8080:80 rkyndevops/httpd2
+  271  docker ps
+  272  docker stop 139
+  273  docker rm 139
+  274  docker rmi rkyndevops/httpd2
+  275  vi index.html 
+  276  docker build -t rkyndevops/httpd2 .
+  277  docker run -itd -p 8080:80 rkyndevops/httpd2
+  278  docker ps
+  279  ls
+  280  vi index.html 
+  281  vi Dockerfile 
+  282  docker stop 16b
+  283  docker ps
+  284  docker rm 16b
+  285  docker rmi rkyndevops/httpd2
+  286  docker build -t rkyndevops/httpd2 .
+  287  docker run -itd -p 8080:80 rkyndevops/httpd2
+  288  docker login
+  289  docker ps
+  290  docker push &(docker ps)
+  291  docker push $(docker ps)
+  292  docker push rkyndevops/httpd2
+  293  docker build -t rkyndevops/httpd3 .
+  294  docker run -itd -p 8080:80 rkyndevops/httpd3
+  295  docker run -itd -p 8085:80 rkyndevops/httpd3
+  296  docker push rkyndevops/httpd3
+  297  docker push httpd
+  298  docker tag rkyndevops/httpd3 rkyndevops/httpd
+  299  docker images
+  300  docker tag httpd rkyndevops/httpd
+  301  docker images
+  302  docker push rkyndevops/httpd
+  303  docker tag hello-world rkyndevops/hello-world
+  304  docker images
+  305  docker push rkyndevops/hello-world
+  306  docker ps
+  307  docker stop $(docker ps -aq)
+  308  docker rmi rkyndevops/*
+  309  docker rmi rkyndevops/* .
+  310  docker rmi rkyndevops/httpd2
+  311  docker images
+  312  docker pull rkyndevops/httpd2
+  313  docker images
+  314  history
+  315  docker run -itd --name containerubuntu ubuntu:16.04 
+  316  dockerimages
+  317  docker images
+  318  docker ps
+  319  docker exec -it containerubuntu /bin/bash
+  320  docker commit 0ac
+  321  docker ps
+  322  docker commit b9d
+  323  docker images
+  324  docker tag 1e2de5dcce93 rkyndevops/apacheubuntu
+  325  docker images
+  326  docker run -itd --name containerbaru -p 80:80 rkyndevops/apacheubuntu /usr/sbin/apachectl -DEFOREGROUND
+  327  docker ps
+  328  docker run -itd --name containerbaru2 -p 80:80 rkyndevops/apacheubuntu /usr/sbin/apachectl -DEFOREGROUND
+  329  docker ps
+  330  docker ps -aq
+  331  docker ps -a
+  332  docker rm f86
+  333  docker ps -a
+  334  docker start 48d
+  335  docker ps
+  336  docker start 48d
+  337  docker ps -a
+  338  docker run 48d
+  339  docker run -itd --name containerbaru2 -p 80:80 rkyndevops/apacheubuntu /usr/sbin/apachectl -DFOREGROUND
+  340  docker ps -a
+  341  docker rm containerbaru
+  342  docker ps -a
+  343  history
+  344  vi Dockerfile 
+  345  docker build rkyndevops/nginx
+  346  docker build -t rkyndevops/nginx .
+  347  history | tail -100
+  348  docker images
+  349  docker run -itd --name nginxubuntu buntu:16.04
+  350  docker run -itd --name nginxubuntu ubuntu:16.04
+  351  docker ps
+  352  docker commit fcc
+  353  coker images
+  354  docker images
+  355  docker tag 1631f5f5857c nginxubuntu
+  356  docker tag 1631f5f5857c rkyndevops/nginxubuntu
+  357  docker images
+  358  docker run -itd --name nginxbaru -p 90:80 rkyndevops/nginxubuntu /usr/sbin/nginx -g 'daemon off:'
+  359  docker ps
+  360  docker ps -q
+  361  docker ps -a
+  362  vi Dockerfile
+  363  docker rm 9b6
+  364  doker iamges
+  365  docker images
+  366  docker rmi nginxubuntu\
+  367  docker rmi nginxubuntu
+  368  docker image
+  369  docker rmi rkyndevops/nginxubuntu
+  370  docker rmi rkyndevops/nginx
+  371  docker build -t rkyndevops/nginx2 .
+  372  history | tail -100
+  373  docker run -itd --name nginx_ubuntu ubuntu:16
+  374  history | tail -75
+  375  docker ps
+  376  docker commit fb6
+  377  docker images
+  378  docker tag a98ceec7abbe rkyndevops/nginx_ubuntu
+  379  docker run -itd --name nginxbaru2 -p 90:80 rkyndevops/nginx_ubuntu /usr/sbin/nginx -g 'daemon off:'
+  380  docker ps
+  381  docker ps -a
+  382  docker run -itd --name nginxbaru2 -p 90:80 rkyndevops/nginx_ubuntu /usr/sbin/nginx -g 'daemon off;'
+  383  docker rm nginx2
+  384  docker rm nginxbaru2
+  385  docker run -itd --name nginxbaru2 -p 90:80 rkyndevops/nginx_ubuntu /usr/sbin/nginx -g 'daemon off;'
+  386  docker ps
+  387  vi Dockerfile 
+  388  docker ps
+  389  docker images
+  390  docker push rkyndevops/nginx2
+  391  docker push rkyndevops/nginx_ubuntu
+  392  history | tail -50
+  393  history | tail -50 >> cara_nginx.txt
+  394  cd /
+  395  ls
+  396  mkdir volume
+  397  cd volume/
+  398  echo "<h1> Test Volume </h1>" > index.html
+  399  pwd
+  400  docker login
+  401  hostory
+  402  history
+  403  docker network create --driver=bidge --subnet=192.168.10.0/24 network-A
+  404  docker network create --driver=bridge --subnet=192.168.10.0/24 network-A
+  405  docker network list
+  406  ls
+  407  cd mycode/
+  408  ls
+  409  cd ..
+  410  cd /
+  411  cd volume/
+  412  docker run --name container-A --network network-A -it ubuntu:16.04
+  413  ping 172.16.0.1
+  414  ping 9gag.com
+  415  docker stats
+  416  docker stats >> checkstatstest.txt
+  417  ls
+  418  vi checkstatstest.txt 
+  419  docker inspect
+  420  docker inspect container-A
+  421  docker inspect network-A
+  422  docker inspect rkyndevops/httpd2
+  423  docker networkls
+  424  docker networks
+  425  docker run list
+  426  docker save -o /var/image.tar rkyndevops/httpd2
+  427  cd /var/
+  428  ls
+  429  docker load -i /var/image.tar 
+  430  yum install ansible
+  431  hostnamectl set-hostname master
+  432  logout
+  433  cv /
+  434  cd /
+  435  logout
+  436  login
+  437  hostory
+  438  history
+  439  yum install ansible
+  440  ssh 192.168.100.168
+  441  ssh rkyndevops@192.168.100.168
+  442  ssh 192.168.100.159
+  443  vi /etc/hosts
+  444  ping ubuntu
+  445  ping centos2
+  446  ssh ubuntu
+  447  ssh rkyndevops@ubuntu
+  448  ssh ubuntu
+  449  yum install ansible
+  450  vi /etc/ansible/hosts 
+  451  ansible centos
+  452  ansible all -m ping
+  453  ansible all -m ping --ask-pass
+  454  ssh root@centos2
+  455  ansible all -m ping --ask-pass
+  456  ansible all -m shell -a "echo 'test'" > test.txt --ask-pass
+  457  ansible all -m shell -a "echo 'test' > test.txt" --ask-pass
+  458  ansible all -m shell -a "history > testHistory.txt" --ask-pass
+  459  history
+  460  yum install git-core -y
+  461  ipconfig
+  462  help
+  463  gedit test.txt &
+  464  git-clone https://github.com/rkyn-devops/mycode.git
+  465  git clone https://github.com/rkyn-devops/mycode.git
+  466  ifconfig
+  467  ipconfig
+  468  ifconfig
+  469  history
+  470  yum update
+  471  history
+  472  ssh-keygen -t rsa
+  473  ls .ssh/
+  474  ssh-copy-id root@centos2
+  475  ssh root@centos2
+  476  ssh-copy-id root@ubuntuRakyan
+  477  ssh-copy-id rkyndevops@ubuntuRakyan
+  478  ssh-copy-id root@ubuntuRakyan
+  479  cat /etc/hosts
+  480  ssh-copy-id root@ubuntu
+  481  ssh root@ubuntu
+  482  ansible all -m shell -a "echo 'test2' > test2.txt"
+  483  ansible all -m shell -a "history > history1.txt"
+  484  vim test.yaml
+  485  yum install vim
+  486  vim test.yaml
+  487  ansible-playbook test.yaml 
+  488  vim test.yaml
+  489  ansible-playbook test.yaml 
+  490  echo '<h1> Testing ansible playbook </h1>' > index.html
+  491  ansible-playbook test.yaml 
+  492  vim test.yaml
+  493  ansible-playbook test.yaml 
+  494  ls
+  495  history | head -100
+  496  git login
+  497  git status
+  498  git help
+  499  ansible all -m setup
+  500  vim test.yaml 
+  501  ansible-playbook test.yaml 
+  502  vim test.yaml 
+  503  ansible-playbook test.yaml 
+  504  vim test.yaml 
+  505  ansible-playbook test.yaml 
+  506  vim test.yaml 
+  507  ansible-playbook test.yaml 
+  508  vim test.yaml 
+  509  ansible-playbook test.yaml 
+  510  vim test.yaml 
+  511  ansible-playbook test.yaml 
+  512  vim vars.yaml
+  513  ansible-playbook vars.yaml 
+  514  vim vars.yaml
+  515  ansible-playbook vars.yaml 
+  516  vim vars.yaml
+  517  ansible-playbook vars.yaml 
+  518  vim vars.yaml
+  519  ansible-playbook vars.yaml 
+  520  vim vars.yaml
+  521  ansible-playbook vars.yaml 
+  522  vim vars.yaml
+  523  ansible-playbook vars.yaml 
+  524  vim vars.yaml
+  525  ansible-playbook vars.yaml 
+  526  vim vars.yaml
+  527  yum remove ansible
+  528  yum install epel-release =y
+  529  yum install ansible
+  530  vim /etc/ansible/hosts
+  531  vim vars.yaml
+  532  ansible-vault encrypt vars.yaml
+  533  vim vars.yaml
+  534  ansible-vault decrypt vars.yaml
+  535  vim vars.yaml
+  536  ansible-vault encrypt vars.yaml
+  537  history > mycode/history110519.txt
